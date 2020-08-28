@@ -37,6 +37,7 @@ const Navbar = ({ user, setUser, logOut }) => {
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
                 cookiePolicy={'single_host_origin'}
+                isSignedIn={true}
               />) : (<GoogleLogout
                 clientId={config.client_id}
                 buttonText="Logout"
